@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Item Details - PVC Solvent</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="item-details">
+        <h1 id="itemName"></h1>
+        <p id="itemDescription"></p>
+        <p id="itemQuantity"></p>
+        <p id="itemPrice"></p>
+      </section>
+      <section class="item-comments">
+        <h2>Comments</h2>
+        <div id="commentsContainer"></div>
+        <form id="commentForm">
+          <textarea id="commentContent" placeholder="Add a comment"></textarea>
+          <input
+            type="number"
+            id="commentRating"
+            placeholder="Rating"
+            min="1"
+            max="5"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 PVC Solvent Store. All rights reserved.</p>
+    </footer>
+    <script src="./js/item.js"></script>
+  </body>
+</html>
